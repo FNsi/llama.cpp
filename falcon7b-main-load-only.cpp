@@ -1,3 +1,5 @@
+//todo: every layers are 4D tensor, and i am lazy to check, gonna compare with bloomz-560m and see the tensors difference.
+
 #include "ggml.h"
 
 #include "utils.h"
