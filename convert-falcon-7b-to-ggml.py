@@ -127,7 +127,7 @@ for name in list_vars.keys():
 
 
     if "query_key_value" in src:
-        q, k, v, none = list_vars[src].split(list_vars[src].shape[0] // 3, dim=0)
+        q, k, v, none = list_vars[src].split(list_vars[src].shape[0] // 4, dim=0)
         old_name = name
         for data, n in zip([q, k, v], ["wq", "wk", "wv"]):
             name = old_name
