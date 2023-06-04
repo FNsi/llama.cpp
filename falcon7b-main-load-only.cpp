@@ -1,5 +1,6 @@
 //todo: every layers are 4D tensor, and i am lazy to check, gonna compare with bloomz-560m and see the tensors difference.
-
+//the only 3D tensor in bloomz is QKV, so, only need to change little bit.
+//embedding norn layer is not in falcon, do it using math.
 #include "ggml.h"
 
 #include "utils.h"
