@@ -21,12 +21,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, BloomF
 
 conv_map = {
     'word_embeddings'       : 'tok_embeddings',
-    "word_embeddings_layernorm": 'norm',
     	'input_layernorm'        : 'attention_norm',
-#        'ln_attn'        : 'attention_norm',
         'self_attention.query_key_value': 'attention.query_key_value',
         'self_attention.dense':          'attention.wo',
-        'ln_mlp': 'ffn_norm',
         'mlp.dense_h_to_4h'           : 'feed_forward.w1',
         'mlp.dense_4h_to_h'           : 'feed_forward.w2',
         'ln_f'                        : 'output_norm',
